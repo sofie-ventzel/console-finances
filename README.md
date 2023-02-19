@@ -1,7 +1,8 @@
 # Console log finances
 
 ## Description
-This is an application which helps you learn more about your finances over a timeperiod.
+This is an application which helps you learn more about a companies finances over a timeperiod.
+The company is fictional, and their records are in an attached file. 
 
 ## Deployed link
 
