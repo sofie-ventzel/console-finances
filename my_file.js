@@ -20,22 +20,33 @@ sumFinances(finances)
 
 
 // Track the changes from month to month
+/*
 function changes() {
+    var a = (finances[i])
+    var b = (finances[i++])
     for ( i=0; i<finances.length; i++) {
-        
+        diff = (a[1]) - (b[1])
+     
         
     } 
-    console.log('something')
-    return; 
+    console.log('something' + diff)
+    return diff; 
 }
 
 changes(finances)
+*/
+let monthlyChanges = finances.map(function(element) {
+    return element * 2;
+});
+console.log(monthlyChanges)
 
 // Find the average of the changes, perhaps a new array to track the changes? store to variable and divide by total of months
 
 
 // Find the greatest increase in profits (date and amount)
 // if the index number is higher, compare to the next one
+/*console.log('Greatest profit:' + Math.max(finances[i][1]))*/
+
 function greatestIncrease() {
     var sum = 0;
     for ( main_index=0; main_index<finances.length; main_index++) {
