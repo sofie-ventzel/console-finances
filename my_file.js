@@ -31,17 +31,23 @@ function changes() {
 
 changes(finances)
 
-// Find the average of the changes, perhaps a new array to track the changes?
+// Find the average of the changes, perhaps a new array to track the changes? store to variable and divide by total of months
 
 
 // Find the greatest increase in profits (date and amount)
 // if the index number is higher, compare to the next one
 function greatestIncrease() {
     var sum = 0;
-    for ( i=0; i<finances.length; i++) {
-        if ((sum += (finances[i][1])) < (finances[i++][1]) => (sum === )) {
-            sum = (finances[i++][1])
-        }     
+    for ( main_index=0; main_index<finances.length; main_index++) {
+        for(var nested_index = 0; nested_index < finances[main_index].length; nested_index++){
+            console.log(finances[main_index][nested_index])
+        }
+        
+        /*if ((finances[i][1]) < (finances[i++][1])) {
+            sum === (finances[i++][1])
+        } else {
+            
+        } */   
     };
     console.log('Greatest increase in profits: ' + sum ); 
     return; 
